@@ -1,4 +1,59 @@
+body{
+    
+}
+
+img#bubbles{
+    max-width: 40%;
+}
+#bubs{
+    margin-left: 9vw;
+}
+
+img#julian{
+    max-height: 50%;
+    margin-left: 15px;
+}
+#jul{
+    margin-left: 8vw;
+}
+
+#rick{
+ margin-left: 10vw;
+}
+
+img#conky{
+ width: 200px;
+}
+#conk{
+    margin-left: 9vw; 
+}
+
+.container{
+    margin: 50px;
+}
+
+
 img{
-    display: inline;
-    object-fit: scale-down;
+    margin-left: 30px;
+}
+
+
+#navbar{
+    margin-left: 27%;
+}
+
+.jumbotron{
+    padding-top: 30px;
+    
+}
+
+#playspc{
+    background-image: url(http://cdn.tvweb.com/img.news.tops/NE9DKyRBfqNPdd_1_a/Trailer-Park-Boys-Season-8-Trailer.jpg);
+    background-position-y: -80px;
+}
+h3{
+    color: yellow;
+}
+#rule{
+    color: black;
 }
