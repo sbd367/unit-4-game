@@ -1,31 +1,31 @@
-body{
-    
-}
-
 img#bubbles{
-    max-width: 40%;
+    max-width: 20%;
+    margin-left: 40px;
 }
 #bubs{
-    margin-left: 9vw;
+    margin-left: 1vw;
+    margin-right: 3vw;
 }
 
 img#julian{
-    max-height: 50%;
-    margin-left: 15px;
+    margin-left: 18px;
 }
 #jul{
-    margin-left: 8vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 #rick{
- margin-left: 10vw;
+ margin-right: 3vw;
 }
 
 img#conky{
- width: 200px;
+ width: 220px;
+ margin-right: 18px;
 }
 #conk{
-    margin-left: 9vw; 
+    margin-left: .5vw; 
+    margin-right: 3vw;
 }
 
 .container{
@@ -34,7 +34,7 @@ img#conky{
 
 
 img{
-    margin-left: 30px;
+    margin-left: 45px;
 }
 
 
@@ -53,7 +53,14 @@ img{
 }
 h3{
     color: yellow;
+    background-color: black;
+    text-align: center;
 }
 #rule{
     color: black;
+    background: none;
+}
+#indS h3{
+    background-color: black;
+    text-align: center;
 }

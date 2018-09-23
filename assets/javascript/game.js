@@ -3,10 +3,8 @@ var losses = 0;
 
 var math = 0;
 
-/**Random Number**/
 var number = Math.floor((Math.random()* 100) + 19);
 
-/**Random Crystal Power**/
 var bubblesP = Math.floor((Math.random()* 12) + 1);
 var julianP = Math.floor((Math.random()* 12) + 1);
 var conkyP = Math.floor((Math.random()* 12) + 1);
@@ -30,9 +28,9 @@ var show = function(){
 	$('#winC').append(wins);
 	$('#lossC').text('Losses: ');
 	$('#lossC').append(losses);
-	$('#currentS').text('Current: ');
+	$('#currentS').text('Current Pot: ');
 	$('#currentS').append(math);
-	$('#targetK').text('burgers needed: ');
+	$('#targetK').text('Target Pot: ');
     $('#targetK').append(number);
     showTheBois();
     
@@ -43,7 +41,7 @@ var reset = function(){
 	math = 0;
     number = Math.floor((Math.random()* 100) + 19);
 
-	$('#targetK').text('Target score: ');
+	$('#targetK').text('Target Pot :');
     $('#targetK').append(number);
      
 
@@ -55,9 +53,10 @@ var reset = function(){
 }
 
 
-var config = function (){
+var check = function (){
 	if (math == number) {
-		wins = wins + 1;
+        wins = wins + 1;
+        alert("you did it!")
         reset();
         
 }
@@ -77,24 +76,24 @@ var config = function (){
 	$(document).ready(function(){
 	$('#julian').click(function(){
         math = math + julianP;
-        config();
+        check();
         
 	})
 	$('#bubbles').click(function(){
         math  = math  + bubblesP;
-        config();
+        check();
         
 	})
 	$('#conky').click(function(){
         math  = math  + conkyP;
-        config();
+        check();
         
 	})
 	$('#ricky').click(function(){
         math  = math  + rickyP;
-        config();
+        check();
         
     })
     show();
-    // showTheBois();
+
 });

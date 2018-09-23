@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-light bg-light">
-                    <h2 id="navbar">Help the boys escape the $h!t storm</h2>
+                    <h2 id="navbar">Trailer Park Boys Number Game</h2>
                   </nav>
             </div>
         </div>
@@ -24,10 +24,12 @@
                 <div id="rules" class="jumbotron">
                     <h3 id="rule">Here's the game</h3>
                     <ul>
-                        <li>A $h!t storm's a brewin'!</li>
-                        <li>Give randy the exact amout of cheeseburgers Lahey asks</li>
-                        <li>Each round the boys will be given a set amount of cheeseburgers to give to randy</li>
-                        <!-- <li>give randy the exact amout of cheeseburgers Lahey asks</li> -->
+                        <li>Every round a new target value will be displayed</li>
+                        <li>Each of the trailer park boys will have their own random number to contribute when clicked</li>
+                        <li>Try and match the current pot to the target value</li>
+                        <li>When a new round begins the target score and TPB score will reset</li>
+                        
+
                         
                     </ul>
                 </div>
@@ -40,31 +42,40 @@
                         <!-- gg -->
                         <div class="col-md-6"></div>
                         <div class="col-md-3">
-                                <h3 id="targetK">Cheeseburgers</h3>
+                                <h3 id="targetK"></h3>
                             </div>
                         <div class="col-md-3">
-                            <h3 id="currentS">Current:</h3>
+                            <h3 id="currentS"></h3>
                         </div>
                     </div>
+
                     <img id="julian" src="assets/images/julian.jpeg" alt="tumblerguy">
-                    <img id="bubbles" src="assets/images/bubbles.jpeg" alt="kittys">
+                    <img id="bubbles" src="https://vignette.wikia.nocookie.net/trailerparkboys/images/6/63/Bubbles.jpg/revision/latest?cb=20111017154207" alt="kittys">
                     <img id="ricky" src="assets/images/ricky.jpeg" alt="twoBirds">
                     <img id="conky" src="assets/images/conky.jpg" alt="conky">
-                    <div class="row">
+                    
+                    <div id="indS" class="row">
+                        
                         <div class="col-md-3">
                             <h3 id="jul"></h3>
                         </div>
+                        
                         <div class="col-md-3">
                             <h3 id="bubs"></h3>
                         </div>
+
                         <div class="col-md-3">
                             <h3 id="rick"></h3>
                         </div>
+
                         <div class="col-md-3">
                             <h3 id="conk"></h3>
                         </div>
+
                     </div>
+
                     <div class="row">
+
                         <div class="col-md-3">
                                 <h3 id="winC">Wins:</h3>
                         </div>
@@ -74,6 +85,7 @@
                         <div class="col-md-3">
                                 <h3 id="lossC">Losses:</h3>
                         </div>
+
                     </div>
                 </div>
             </div>
