@@ -1,22 +1,22 @@
 img#bubbles{
     max-width: 20%;
-    margin-left: 40px;
 }
 #bubs{
-    margin-left: 1vw;
+    margin-left: 0vw;
     margin-right: 3vw;
 }
 
 img#julian{
     margin-left: 18px;
+    height: 226px;
 }
 #jul{
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 1vw;
+    margin-right: 2.5vw;
 }
 
 #rick{
- margin-right: 3vw;
+ margin-right: 2.7vw;
 }
 
 img#conky{
@@ -25,7 +25,7 @@ img#conky{
 }
 #conk{
     margin-left: .5vw; 
-    margin-right: 3vw;
+    margin-right: 1.5vw;
 }
 
 .container{
@@ -34,7 +34,9 @@ img#conky{
 
 
 img{
-    margin-left: 45px;
+    margin-left: 55px;
+    border-radius: 10px;
+    height: 226px;
 }
 
 
@@ -51,15 +53,19 @@ img{
     background-image: url(http://cdn.tvweb.com/img.news.tops/NE9DKyRBfqNPdd_1_a/Trailer-Park-Boys-Season-8-Trailer.jpg);
     background-position-y: -80px;
 }
+
 h3{
     color: yellow;
     background-color: black;
     text-align: center;
+    border-radius: 10px;
 }
+
 #rule{
     color: black;
     background: none;
 }
+
 #indS h3{
     background-color: black;
     text-align: center;

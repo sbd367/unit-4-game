@@ -1,7 +1,7 @@
 var wins = 0;
 var losses = 0;
 
-var math = 0;
+var currentP = 0;
 
 var number = Math.floor((Math.random()* 100) + 19);
 
@@ -29,7 +29,7 @@ var show = function(){
 	$('#lossC').text('Losses: ');
 	$('#lossC').append(losses);
 	$('#currentS').text('Current Pot: ');
-	$('#currentS').append(math);
+	$('#currentS').append(currentP);
 	$('#targetK').text('Target Pot: ');
     $('#targetK').append(number);
     showTheBois();
@@ -38,62 +38,70 @@ var show = function(){
 
 
 var reset = function(){
-	math = 0;
-    number = Math.floor((Math.random()* 100) + 19);
+	currentP = 0;
+    number = Math.floor((Math.random()* 100)+20);
 
 	$('#targetK').text('Target Pot :');
     $('#targetK').append(number);
      
 
-	bubblesP = Math.floor((Math.random()* 12) + 1);
-    julianP = Math.floor((Math.random()* 12) + 1);
-    conkyP = Math.floor((Math.random()* 12) + 1);
-    rickyP = Math.floor((Math.random()* 12) + 1);
+	bubblesP = Math.floor((Math.random()* 15));
+    julianP = Math.floor((Math.random()* 15));
+    conkyP = Math.floor((Math.random()* 15));
+    rickyP = Math.floor((Math.random()* 15));
     show();
 }
 
 
 var check = function (){
-	if (math == number) {
+
+	if (currentP == number) {
         wins = wins + 1;
         alert("you did it!")
-        reset();
-        
-}
-	else if(math > number){
-		losses = losses + 1;
-        reset();
-        
-}
+        reset();   
+    }
+
+	else if(currentP > number){
+        losses = losses + 1;
+        alert("Loser");
+        reset();   
+    }
+
 	else{
 		show();
-}}
+    }
+}
 
-	$('#currentS').append(math);
+    $('#currentS').append(currentP);
     $('#targetK').append(number);
     
 
 	$(document).ready(function(){
+
 	$('#julian').click(function(){
-        math = math + julianP;
-        check();
-        
-	})
-	$('#bubbles').click(function(){
-        math  = math  + bubblesP;
-        check();
-        
-	})
-	$('#conky').click(function(){
-        math  = math  + conkyP;
-        check();
-        
-	})
-	$('#ricky').click(function(){
-        math  = math  + rickyP;
+        currentP = currentP + julianP;
         check();
         
     })
+    
+	$('#bubbles').click(function(){
+        currentP  = currentP  + bubblesP;
+        check();
+        
+    })
+    
+	$('#conky').click(function(){
+        currentP  = currentP  + conkyP;
+        check();
+        
+    })
+    
+	$('#ricky').click(function(){
+        currentP  = currentP  + rickyP;
+        check();
+        
+    })
+
     show();
 
 });
