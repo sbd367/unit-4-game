@@ -9,19 +9,7 @@ var bubblesP = Math.floor((Math.random()* 12) + 1);
 var julianP = Math.floor((Math.random()* 12) + 1);
 var conkyP = Math.floor((Math.random()* 12) + 1);
 var rickyP = Math.floor((Math.random()* 12) + 1);
-
-var showTheBois = function(){
-    $('#conk').text('');
-    $('#conk').append(conkyP);
-    $('#bubs').text('')
-    $('#bubs').append(bubblesP);
-    $('#rick').text('');
-    $('#rick').append(rickyP);
-    $('#jul').text('');
-    $('#jul').append(julianP);
-}
-
-
+ 
 
 var show = function(){
 	$('#winC').text('Wins: ');
@@ -32,8 +20,14 @@ var show = function(){
 	$('#currentS').append(currentP);
 	$('#targetK').text('Target Pot: ');
     $('#targetK').append(number);
-    showTheBois();
-    
+    $('#conk').text('');
+    $('#conk').append(conkyP);
+    $('#bubs').text('')
+    $('#bubs').append(bubblesP);
+    $('#rick').text('');
+    $('#rick').append(rickyP);
+    $('#jul').text('');
+    $('#jul').append(julianP);
 }
 
 
@@ -72,29 +66,28 @@ var check = function (){
     }
 }
 
-    $('#currentS').append(currentP);
-    $('#targetK').append(number);
+$('#currentS').append(currentP);
+    
+$('#targetK').append(number);
     
 
-	$(document).ready(function(){
+$(document).ready(function(){
 
 	$('#julian').click(function(){
         currentP = currentP + julianP;
         check();
-        
-    })
+        })
     
-	$('#bubbles').click(function(){
+	 $('#bubbles').click(function(){
         currentP  = currentP  + bubblesP;
         check();
-        
-    })
+        })
     
 	$('#conky').click(function(){
         currentP  = currentP  + conkyP;
         check();
         
-    })
+        })
     
 	$('#ricky').click(function(){
         currentP  = currentP  + rickyP;
@@ -102,6 +95,6 @@ var check = function (){
         
     })
 
-    show();
+        show();
 
 });
