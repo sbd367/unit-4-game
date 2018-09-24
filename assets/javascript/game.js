@@ -66,9 +66,9 @@ var check = function (){
     }
 }
 
-$('#currentS').append(currentP);
+// $('#currentS').append(currentP);
     
-$('#targetK').append(number);
+// $('#targetK').append(number);
     
 
 $(document).ready(function(){
